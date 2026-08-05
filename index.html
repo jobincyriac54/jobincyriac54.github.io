@@ -13,9 +13,9 @@
         .hero-gradient { background: radial-gradient(circle at top right, #1e293b, #0f172a); }
         .cert-card { transition: all 0.3s ease; border: 1px solid #e2e8f0; background: white; }
         .cert-card:hover { transform: translateY(-3px); border-color: #3b82f6; box-shadow: 0 10px 20px -10px rgba(59, 130, 246, 0.2); }
-        .badge-databricks { color: #FF3621; }
-        .badge-microsoft { color: #00A4EF; }
-        .badge-ai { color: #7575ff; }
+        .profile-img { border: 8px solid rgba(255,255,255,0.1); box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5); }
+        .timeline-line { position: absolute; left: 8px; top: 0; bottom: 0; width: 2px; background: #e2e8f0; }
+        .skill-tag { background: #f1f5f9; color: #475569; padding: 4px 12px; border-radius: 99px; font-size: 13px; font-weight: 600; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900 overflow-x-hidden">
@@ -37,128 +37,79 @@
     </nav>
 
     <!-- Hero Section -->
-    <header id="about" class="hero-gradient text-white pt-32 pb-20 px-6">
-        <div class="max-w-4xl mx-auto">
-            <div class="inline-block px-3 py-1 bg-blue-500/20 border border-blue-400/30 rounded-full text-blue-300 text-sm font-semibold mb-6 uppercase tracking-widest">
-                Data Engineering Specialist
+    <header id="about" class="hero-gradient text-white pt-32 md:pt-48 pb-20 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="w-64 h-64 md:w-80 md:h-80 flex-shrink-0">
+                <img src="profile.jpg" alt="Jobin Cyriac" class="profile-img w-full h-full object-cover rounded-3xl">
             </div>
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">Jobin Cyriac</h1>
-            <p class="text-xl md:text-2xl text-slate-300 mb-8 max-w-2xl leading-relaxed">
-                <span class="text-white font-semibold">Databricks Professional & Microsoft Certified</span>. 
-                Building scalable Lakehouse architectures and AI-driven data pipelines.
-            </p>
-            <div class="flex flex-wrap gap-4">
-                <a href="https://linkedin.com/in/jobincyriac54" target="_blank" class="flex items-center gap-2 bg-white text-slate-900 px-6 py-3 rounded-xl font-bold hover:bg-slate-100 transition shadow-lg">
-                    <i class="fab fa-linkedin text-xl text-blue-600"></i> LinkedIn
-                </a>
-                <a href="#certifications" class="flex items-center gap-2 bg-slate-800 text-white px-6 py-3 rounded-xl font-bold border border-slate-700 hover:bg-slate-700 transition">
-                    <i class="fas fa-award text-xl text-yellow-400"></i> View 5 Certifications
-                </a>
+            <div class="flex-1 text-center md:text-left">
+                <div class="inline-block px-3 py-1 bg-blue-500/20 border border-blue-400/30 rounded-full text-blue-300 text-sm font-semibold mb-6 uppercase tracking-widest">
+                    4+ YOE Data Engineer
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">Jobin Cyriac</h1>
+                <p class="text-xl md:text-2xl text-slate-300 mb-8 max-w-2xl leading-relaxed">
+                    A <span class="text-white font-semibold">Certified Data & AI Engineer</span> specialized in building secure, end-to-end pipelines in Azure, Fabric, and Databricks.
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="https://linkedin.com/in/jobincyriac54" target="_blank" class="flex items-center gap-2 bg-white text-slate-900 px-6 py-3 rounded-xl font-bold hover:bg-slate-100 transition shadow-lg">
+                        <i class="fab fa-linkedin text-xl text-blue-600"></i> LinkedIn
+                    </a>
+                    <a href="mailto:jobincyriac1997@gmail.com" class="flex items-center gap-2 bg-slate-800 text-white px-6 py-3 rounded-xl font-bold border border-slate-700 hover:bg-slate-700 transition">
+                        <i class="fas fa-envelope text-xl text-blue-400"></i> Contact Me
+                    </a>
+                </div>
             </div>
         </div>
     </header>
 
     <!-- Certifications Section -->
-    <section id="certifications" class="py-24 px-6 bg-slate-50">
+    <section id="certifications" class="py-24 px-6 bg-white">
         <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold mb-4">Professional Credentials</h2>
-                <div class="h-1 w-20 bg-blue-600 mx-auto"></div>
-            </div>
-            
+            <h2 class="text-3xl font-bold mb-12 text-center">Verified Credentials</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                
-                <!-- Databricks Prof -->
+                <!-- Professional Databricks -->
                 <a href="https://credentials.databricks.com/fa7c2e10-a42e-4afd-82f1-597bacaf43e5#acc.Oad2SPNo" target="_blank" class="cert-card p-6 rounded-2xl flex flex-col justify-between group">
                     <div>
-                        <i class="fas fa-certificate text-2xl badge-databricks mb-4"></i>
-                        <h4 class="font-bold text-lg leading-snug group-hover:text-blue-600 transition">Data Engineer Professional</h4>
-                        <p class="text-xs font-bold text-slate-400 mt-1 uppercase tracking-tighter">Databricks</p>
+                        <div class="flex justify-between items-start mb-4">
+                            <i class="fas fa-certificate text-2xl text-orange-500"></i>
+                            <span class="text-[10px] font-black uppercase text-slate-400">Professional</span>
+                        </div>
+                        <h4 class="font-bold text-lg leading-snug group-hover:text-blue-600 transition">Databricks Data Engineer Professional</h4>
                     </div>
-                    <span class="mt-6 text-sm font-semibold text-blue-500 flex items-center">Verify Link <i class="fas fa-arrow-right ml-2 text-xs"></i></span>
+                    <span class="mt-6 text-sm font-semibold text-blue-500">Verify <i class="fas fa-external-link-alt ml-1 text-[10px]"></i></span>
                 </a>
 
-                <!-- Databricks Assoc -->
+                <!-- Associate Databricks -->
                 <a href="https://credentials.databricks.com/3e68040e-8844-438b-bfc9-b78863c46a3b#acc.cfCjNXp4" target="_blank" class="cert-card p-6 rounded-2xl flex flex-col justify-between group">
                     <div>
-                        <i class="fas fa-certificate text-2xl badge-databricks mb-4"></i>
-                        <h4 class="font-bold text-lg leading-snug group-hover:text-blue-600 transition">Data Engineer Associate</h4>
-                        <p class="text-xs font-bold text-slate-400 mt-1 uppercase tracking-tighter">Databricks</p>
+                        <i class="fas fa-certificate text-2xl text-orange-400 mb-4"></i>
+                        <h4 class="font-bold text-lg leading-snug group-hover:text-blue-600 transition">Databricks Data Engineer Associate</h4>
                     </div>
-                    <span class="mt-6 text-sm font-semibold text-blue-500 flex items-center">Verify Link <i class="fas fa-arrow-right ml-2 text-xs"></i></span>
+                    <span class="mt-6 text-sm font-semibold text-blue-500">Verify <i class="fas fa-external-link-alt ml-1 text-[10px]"></i></span>
                 </a>
 
                 <!-- Claude AI -->
                 <a href="https://verify.skilljar.com/c/eumqrfbz7jv9" target="_blank" class="cert-card p-6 rounded-2xl flex flex-col justify-between group">
                     <div>
-                        <i class="fas fa-robot text-2xl badge-ai mb-4"></i>
-                        <h4 class="font-bold text-lg leading-snug group-hover:text-blue-600 transition">Certified AI Architect</h4>
-                        <p class="text-xs font-bold text-slate-400 mt-1 uppercase tracking-tighter">Claude / Anthropic</p>
+                        <i class="fas fa-robot text-2xl text-indigo-500 mb-4"></i>
+                        <h4 class="font-bold text-lg leading-snug group-hover:text-blue-600 transition">Claude Certified AI Architect</h4>
                     </div>
-                    <span class="mt-6 text-sm font-semibold text-blue-500 flex items-center">Verify Link <i class="fas fa-arrow-right ml-2 text-xs"></i></span>
+                    <span class="mt-6 text-sm font-semibold text-blue-500">Verify <i class="fas fa-external-link-alt ml-1 text-[10px]"></i></span>
                 </a>
 
-                <!-- Fabric DP-600 -->
+                <!-- DP-600 -->
                 <a href="https://learn.microsoft.com/en-us/users/jobincyriac-9828/credentials/52caa64e0ae116a" target="_blank" class="cert-card p-6 rounded-2xl flex flex-col justify-between group">
                     <div>
-                        <i class="fab fa-microsoft text-2xl badge-microsoft mb-4"></i>
-                        <h4 class="font-bold text-lg leading-snug group-hover:text-blue-600 transition">Fabric Analytics Engineer</h4>
-                        <p class="text-xs font-bold text-slate-400 mt-1 uppercase tracking-tighter">Microsoft (DP-600)</p>
+                        <i class="fab fa-microsoft text-2xl text-blue-500 mb-4"></i>
+                        <h4 class="font-bold text-lg leading-snug group-hover:text-blue-600 transition">Fabric Analytics Engineer (DP-600)</h4>
                     </div>
-                    <span class="mt-6 text-sm font-semibold text-blue-500 flex items-center">Verify Link <i class="fas fa-arrow-right ml-2 text-xs"></i></span>
+                    <span class="mt-6 text-sm font-semibold text-blue-500">Verify <i class="fas fa-external-link-alt ml-1 text-[10px]"></i></span>
                 </a>
 
-                <!-- Azure DP-203 -->
+                <!-- DP-203 -->
                 <a href="https://learn.microsoft.com/en-us/users/jobincyriac-9828/credentials/3f404fb40bf06b6" target="_blank" class="cert-card p-6 rounded-2xl flex flex-col justify-between group">
                     <div>
-                        <i class="fab fa-microsoft text-2xl badge-microsoft mb-4"></i>
-                        <h4 class="font-bold text-lg leading-snug group-hover:text-blue-600 transition">Azure Data Engineer</h4>
-                        <p class="text-xs font-bold text-slate-400 mt-1 uppercase tracking-tighter">Microsoft (DP-203)</p>
+                        <i class="fab fa-microsoft text-2xl text-blue-600 mb-4"></i>
+                        <h4 class="font-bold text-lg leading-snug group-hover:text-blue-600 transition">Azure Data Engineer (DP-203)</h4>
                     </div>
-                    <span class="mt-6 text-sm font-semibold text-blue-500 flex items-center">Verify Link <i class="fas fa-arrow-right ml-2 text-xs"></i></span>
-                </a>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="py-24 px-6 max-w-6xl mx-auto">
-        <h2 class="text-3xl font-bold mb-16 text-slate-800">Experience Highlights</h2>
-        <div class="space-y-16">
-            <!-- Accenture -->
-            <div class="relative pl-8 border-l-2 border-blue-600">
-                <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-[9px] top-1"></div>
-                <div class="mb-2">
-                    <span class="text-blue-600 font-bold tracking-widest text-sm uppercase">Nov 2025 – Present</span>
-                    <h3 class="text-2xl font-bold text-slate-900">Data Engineer | Accenture</h3>
-                    <p class="italic text-slate-500">Precision Medicine & Clinical Trials</p>
-                </div>
-                <ul class="mt-6 space-y-4 text-slate-600 max-w-3xl leading-relaxed">
-                    <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1 text-sm"></i> <span>Developed end-to-end ETL pipelines in ADF to unify EHR, genomics, and clinical trial data.</span></li>
-                    <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1 text-sm"></i> <span>Optimized Azure Databricks notebooks for large-scale data cleansing and biomarker discovery.</span></li>
-                    <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1 text-sm"></i> <span>Reduced deployment time by 40% via automated CI/CD in Azure DevOps.</span></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-slate-900 text-white py-16 px-6">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-            <div class="text-center md:text-left">
-                <h2 class="text-2xl font-bold mb-2">Jobin Cyriac</h2>
-                <p class="text-slate-400">Data Engineer Professional | Indore, India</p>
-            </div>
-            <div class="flex gap-6 text-2xl">
-                <a href="mailto:jobincyriac1997@gmail.com" class="hover:text-blue-400 transition"><i class="fas fa-envelope"></i></a>
-                <a href="https://linkedin.com/in/jobincyriac54" class="hover:text-blue-400 transition"><i class="fab fa-linkedin"></i></a>
-            </div>
-        </div>
-        <div class="max-w-6xl mx-auto mt-12 pt-8 border-t border-slate-800 text-center text-slate-500 text-sm">
-            © 2024 jobincyriac54.github.io | Built with Tailwind CSS
-        </div>
-    </footer>
-
-</body>
-</html>
+                    <span class="mt-6 text-sm font-semibold text-blue-500">Verify <i class="fas fa-external-link-alt ml-1
