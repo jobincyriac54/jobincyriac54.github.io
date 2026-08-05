@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jobin Cyriac | Azure & Databricks Data Engineer</title>
+    <title>Jobin Cyriac | Certified Data & AI Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap');
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
         .glass { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
         .hero-gradient { background: radial-gradient(circle at top right, #1e293b, #0f172a); }
-        .card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); }
+        .cert-card { transition: all 0.3s ease; border: 1px solid #e2e8f0; background: white; }
+        .cert-card:hover { transform: translateY(-3px); border-color: #3b82f6; box-shadow: 0 10px 20px -10px rgba(59, 130, 246, 0.2); }
+        .badge-databricks { color: #FF3621; }
+        .badge-microsoft { color: #00A4EF; }
+        .badge-ai { color: #7575ff; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900 overflow-x-hidden">
@@ -25,8 +29,8 @@
             </div>
             <div class="hidden md:flex space-x-8 font-semibold text-sm uppercase tracking-wider text-slate-600">
                 <a href="#about" class="hover:text-blue-600 transition">About</a>
+                <a href="#certifications" class="hover:text-blue-600 transition">Certifications</a>
                 <a href="#experience" class="hover:text-blue-600 transition">Experience</a>
-                <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
                 <a href="mailto:jobincyriac1997@gmail.com" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">Contact</a>
             </div>
         </div>
@@ -35,116 +39,124 @@
     <!-- Hero Section -->
     <header id="about" class="hero-gradient text-white pt-32 pb-20 px-6">
         <div class="max-w-4xl mx-auto">
-            <div class="inline-block px-3 py-1 bg-blue-500/20 border border-blue-400/30 rounded-full text-blue-300 text-sm font-semibold mb-6">
-                4+ Years of Experience
+            <div class="inline-block px-3 py-1 bg-blue-500/20 border border-blue-400/30 rounded-full text-blue-300 text-sm font-semibold mb-6 uppercase tracking-widest">
+                Data Engineering Specialist
             </div>
             <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">Jobin Cyriac</h1>
             <p class="text-xl md:text-2xl text-slate-300 mb-8 max-w-2xl leading-relaxed">
-                <span class="text-white font-semibold">Data Engineer</span> specializing in Azure, Microsoft Fabric, and Databricks. Certified professional building scalable, end-to-end data pipelines.
+                <span class="text-white font-semibold">Databricks Professional & Microsoft Certified</span>. 
+                Building scalable Lakehouse architectures and AI-driven data pipelines.
             </p>
             <div class="flex flex-wrap gap-4">
-                <a href="https://linkedin.com/in/jobincyriac54" target="_blank" class="flex items-center gap-2 bg-white text-slate-900 px-6 py-3 rounded-xl font-bold hover:bg-slate-100 transition">
-                    <i class="fab fa-linkedin text-xl"></i> LinkedIn Profile
+                <a href="https://linkedin.com/in/jobincyriac54" target="_blank" class="flex items-center gap-2 bg-white text-slate-900 px-6 py-3 rounded-xl font-bold hover:bg-slate-100 transition shadow-lg">
+                    <i class="fab fa-linkedin text-xl text-blue-600"></i> LinkedIn
                 </a>
-                <a href="mailto:jobincyriac1997@gmail.com" class="flex items-center gap-2 bg-slate-800 text-white px-6 py-3 rounded-xl font-bold border border-slate-700 hover:bg-slate-700 transition">
-                    <i class="fas fa-envelope text-xl"></i> Email Me
+                <a href="#certifications" class="flex items-center gap-2 bg-slate-800 text-white px-6 py-3 rounded-xl font-bold border border-slate-700 hover:bg-slate-700 transition">
+                    <i class="fas fa-award text-xl text-yellow-400"></i> View 5 Certifications
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- Certifications Ribbon -->
-    <section class="bg-blue-600 py-6">
-        <div class="max-w-6xl mx-auto px-6 flex flex-wrap justify-center gap-8 md:gap-16 text-white font-bold text-sm uppercase tracking-widest uppercase">
-            <span class="flex items-center"><i class="fas fa-certificate mr-2"></i> Azure Data Engineer</span>
-            <span class="flex items-center"><i class="fas fa-certificate mr-2"></i> Fabric Analytics Engineer</span>
-            <span class="flex items-center"><i class="fas fa-certificate mr-2"></i> Databricks Certified</span>
-        </div>
-    </section>
-
-    <!-- Work Experience -->
-    <section id="experience" class="py-24 px-6 max-w-6xl mx-auto">
-        <h2 class="text-3xl font-bold mb-16 text-center italic text-slate-400">Professional Journey</h2>
-        
-        <div class="space-y-12">
-            <!-- Accenture -->
-            <div class="grid md:grid-cols-4 gap-8 group">
-                <div class="md:text-right">
-                    <p class="font-bold text-lg text-blue-600">Nov 2025 – Present</p>
-                    <p class="text-slate-500 font-medium">Indore, India</p>
-                </div>
-                <div class="md:col-span-3 border-l-2 border-slate-200 pl-8 pb-12 relative">
-                    <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-[9px] top-2 group-hover:scale-125 transition"></div>
-                    <h3 class="text-2xl font-bold mb-2">Data Engineer | Accenture</h3>
-                    <p class="text-blue-600 font-semibold mb-4 italic">Precision Medicine Group - Clinical Trials & Healthcare</p>
-                    <ul class="space-y-3 text-slate-600 leading-relaxed">
-                        <li>Designed secure data pipelines supporting precision medicine initiatives focused on patient-specific drug efficacy.</li>
-                        <li>Engineered Azure Databricks notebooks for large-scale data cleansing and biomarker discovery.</li>
-                        <li>Reduced deployment time by 40% through automated CI/CD pipelines in Azure DevOps.</li>
-                        <li>Automated workflows using Azure Functions and Logic Apps, reducing manual interventions.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Addend -->
-            <div class="grid md:grid-cols-4 gap-8 group">
-                <div class="md:text-right">
-                    <p class="font-bold text-lg text-slate-400">Oct 2022 – Nov 2025</p>
-                </div>
-                <div class="md:col-span-3 border-l-2 border-slate-200 pl-8 pb-12 relative">
-                    <div class="absolute w-4 h-4 bg-slate-300 rounded-full -left-[9px] top-2 group-hover:bg-blue-400 transition"></div>
-                    <h3 class="text-2xl font-bold mb-2 text-slate-800">Data Engineer | Addend Analytics LLP</h3>
-                    <ul class="space-y-3 text-slate-600">
-                        <li>Maintained 100+ SQL Objects to optimize data storage and complex analytical queries.</li>
-                        <li>Engineered a Microsoft Fabric data warehouse for a shipping client, improving query performance by 30%.</li>
-                        <li>Developed Python-based Azure Functions to periodically integrate invoice data.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Grid -->
-    <section id="skills" class="py-24 bg-slate-100 px-6">
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-24 px-6 bg-slate-50">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold mb-16 text-center">Core Competencies</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-2xl shadow-sm card-hover">
-                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-6">
-                        <i class="fas fa-cloud text-xl"></i>
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Professional Credentials</h2>
+                <div class="h-1 w-20 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Databricks Prof -->
+                <a href="https://credentials.databricks.com/fa7c2e10-a42e-4afd-82f1-597bacaf43e5#acc.Oad2SPNo" target="_blank" class="cert-card p-6 rounded-2xl flex flex-col justify-between group">
+                    <div>
+                        <i class="fas fa-certificate text-2xl badge-databricks mb-4"></i>
+                        <h4 class="font-bold text-lg leading-snug group-hover:text-blue-600 transition">Data Engineer Professional</h4>
+                        <p class="text-xs font-bold text-slate-400 mt-1 uppercase tracking-tighter">Databricks</p>
                     </div>
-                    <h4 class="text-xl font-bold mb-4">Azure Ecosystem</h4>
-                    <p class="text-slate-500 text-sm leading-relaxed">Azure Data Factory, Synapse Analytics, Microsoft Fabric, Azure Functions, Logic Apps, Key Vault.</p>
-                </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm card-hover">
-                    <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center text-orange-600 mb-6">
-                        <i class="fas fa-bolt text-xl"></i>
+                    <span class="mt-6 text-sm font-semibold text-blue-500 flex items-center">Verify Link <i class="fas fa-arrow-right ml-2 text-xs"></i></span>
+                </a>
+
+                <!-- Databricks Assoc -->
+                <a href="https://credentials.databricks.com/3e68040e-8844-438b-bfc9-b78863c46a3b#acc.cfCjNXp4" target="_blank" class="cert-card p-6 rounded-2xl flex flex-col justify-between group">
+                    <div>
+                        <i class="fas fa-certificate text-2xl badge-databricks mb-4"></i>
+                        <h4 class="font-bold text-lg leading-snug group-hover:text-blue-600 transition">Data Engineer Associate</h4>
+                        <p class="text-xs font-bold text-slate-400 mt-1 uppercase tracking-tighter">Databricks</p>
                     </div>
-                    <h4 class="text-xl font-bold mb-4">Big Data & Spark</h4>
-                    <p class="text-slate-500 text-sm leading-relaxed">Azure Databricks, PySpark, Delta Lake, Lakehouse Architecture, Data Modelling.</p>
-                </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm card-hover">
-                    <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center text-green-600 mb-6">
-                        <i class="fas fa-code text-xl"></i>
+                    <span class="mt-6 text-sm font-semibold text-blue-500 flex items-center">Verify Link <i class="fas fa-arrow-right ml-2 text-xs"></i></span>
+                </a>
+
+                <!-- Claude AI -->
+                <a href="https://verify.skilljar.com/c/eumqrfbz7jv9" target="_blank" class="cert-card p-6 rounded-2xl flex flex-col justify-between group">
+                    <div>
+                        <i class="fas fa-robot text-2xl badge-ai mb-4"></i>
+                        <h4 class="font-bold text-lg leading-snug group-hover:text-blue-600 transition">Certified AI Architect</h4>
+                        <p class="text-xs font-bold text-slate-400 mt-1 uppercase tracking-tighter">Claude / Anthropic</p>
                     </div>
-                    <h4 class="text-xl font-bold mb-4">Languages & Tools</h4>
-                    <p class="text-slate-500 text-sm leading-relaxed">Python, SQL (T-SQL), Power BI, Azure DevOps (CI/CD), SSIS, SSMS.</p>
+                    <span class="mt-6 text-sm font-semibold text-blue-500 flex items-center">Verify Link <i class="fas fa-arrow-right ml-2 text-xs"></i></span>
+                </a>
+
+                <!-- Fabric DP-600 -->
+                <a href="https://learn.microsoft.com/en-us/users/jobincyriac-9828/credentials/52caa64e0ae116a" target="_blank" class="cert-card p-6 rounded-2xl flex flex-col justify-between group">
+                    <div>
+                        <i class="fab fa-microsoft text-2xl badge-microsoft mb-4"></i>
+                        <h4 class="font-bold text-lg leading-snug group-hover:text-blue-600 transition">Fabric Analytics Engineer</h4>
+                        <p class="text-xs font-bold text-slate-400 mt-1 uppercase tracking-tighter">Microsoft (DP-600)</p>
+                    </div>
+                    <span class="mt-6 text-sm font-semibold text-blue-500 flex items-center">Verify Link <i class="fas fa-arrow-right ml-2 text-xs"></i></span>
+                </a>
+
+                <!-- Azure DP-203 -->
+                <a href="https://learn.microsoft.com/en-us/users/jobincyriac-9828/credentials/3f404fb40bf06b6" target="_blank" class="cert-card p-6 rounded-2xl flex flex-col justify-between group">
+                    <div>
+                        <i class="fab fa-microsoft text-2xl badge-microsoft mb-4"></i>
+                        <h4 class="font-bold text-lg leading-snug group-hover:text-blue-600 transition">Azure Data Engineer</h4>
+                        <p class="text-xs font-bold text-slate-400 mt-1 uppercase tracking-tighter">Microsoft (DP-203)</p>
+                    </div>
+                    <span class="mt-6 text-sm font-semibold text-blue-500 flex items-center">Verify Link <i class="fas fa-arrow-right ml-2 text-xs"></i></span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-24 px-6 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-16 text-slate-800">Experience Highlights</h2>
+        <div class="space-y-16">
+            <!-- Accenture -->
+            <div class="relative pl-8 border-l-2 border-blue-600">
+                <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-[9px] top-1"></div>
+                <div class="mb-2">
+                    <span class="text-blue-600 font-bold tracking-widest text-sm uppercase">Nov 2025 – Present</span>
+                    <h3 class="text-2xl font-bold text-slate-900">Data Engineer | Accenture</h3>
+                    <p class="italic text-slate-500">Precision Medicine & Clinical Trials</p>
                 </div>
+                <ul class="mt-6 space-y-4 text-slate-600 max-w-3xl leading-relaxed">
+                    <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1 text-sm"></i> <span>Developed end-to-end ETL pipelines in ADF to unify EHR, genomics, and clinical trial data.</span></li>
+                    <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1 text-sm"></i> <span>Optimized Azure Databricks notebooks for large-scale data cleansing and biomarker discovery.</span></li>
+                    <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1 text-sm"></i> <span>Reduced deployment time by 40% via automated CI/CD in Azure DevOps.</span></li>
+                </ul>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 text-white py-20 px-6">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-6">Ready to build something robust?</h2>
-            <p class="text-slate-400 mb-10">Available for data engineering projects and technical collaborations.</p>
-            <div class="flex justify-center gap-6 mb-12">
-                <a href="mailto:jobincyriac1997@gmail.com" class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition"><i class="fas fa-envelope"></i></a>
-                <a href="https://linkedin.com/in/jobincyriac54" class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition"><i class="fab fa-github"></i></a>
+    <footer class="bg-slate-900 text-white py-16 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-center md:text-left">
+                <h2 class="text-2xl font-bold mb-2">Jobin Cyriac</h2>
+                <p class="text-slate-400">Data Engineer Professional | Indore, India</p>
             </div>
-            <p class="text-slate-500 text-sm">© 2024 Jobin Cyriac | Indore, MP, India | +91 9993003123</p>
+            <div class="flex gap-6 text-2xl">
+                <a href="mailto:jobincyriac1997@gmail.com" class="hover:text-blue-400 transition"><i class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/jobincyriac54" class="hover:text-blue-400 transition"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto mt-12 pt-8 border-t border-slate-800 text-center text-slate-500 text-sm">
+            © 2024 jobincyriac54.github.io | Built with Tailwind CSS
         </div>
     </footer>
 
